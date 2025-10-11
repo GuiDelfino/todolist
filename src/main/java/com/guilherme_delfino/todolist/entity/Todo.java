@@ -1,6 +1,7 @@
 package com.guilherme_delfino.todolist.entity;
 
 import jakarta.persistence.*;
+import jakarta.validation.constraints.NotBlank;
 import org.springframework.boot.autoconfigure.web.WebProperties;
 
 @Entity
@@ -9,10 +10,19 @@ public class Todo {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+    @NotBlank
     private String name;
+    @NotBlank
     private String description;
     private Boolean fulfilled;
     private int priority;
+
+    public Todo(String name, String description, Boolean fulfilled, int priority) {
+        this.name = name;
+        this.description = description;
+        this.fulfilled = fulfilled;
+        this.priority = priority;
+    }
 
     public Long getId() {
         return id;

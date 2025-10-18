@@ -1,4 +1,4 @@
-Neste projeto foi realizado um CRUD com a finalidade de cadastrar e visualizar tarefas realizadas, com suas prioridades e se já foram finalizadas ou não.
+Neste projeto foi realizado um CRUD com a finalidade de cadastrar e visualizar tarefas realizadas, com suas prioridades e se já foram finalizadas ou não. Criei também testes automatizados para verificar se minha API está funcionando conforme o esperado.
 
 TECNOLOGIAS:
 
